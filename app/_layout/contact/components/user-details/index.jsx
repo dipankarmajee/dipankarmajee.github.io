@@ -74,7 +74,7 @@ export function UserDetails({ transformX }) {
             </a>
           </div>
           <div>
-            <a href='tel:+31627847430'>
+            <a href='tel:+918001860028'>
               <MagneticButton
                 variant='outline'
                 size='md'

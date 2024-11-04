@@ -1,16 +1,15 @@
 {
   "name": "dipankar-majee-portfolio",
-  "title": "Dipankar Majee • Freelance Designer & Developer",
+  "title": "Dipankar Majee • Developer & DevOps",
   "description": "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dipankar",
   "author": {
-    "name": "Ali Bagheri",
-    "email": "alibagheri2079.dev@gmail.com",
-    "url": "https://www.github.com/alibagheri2079"
+    "name": "Dipankar Majee",
+    "email": "deep2dipankar@gmail.com",
+    "url": "https://www.github.com/dipankarmajee"
   },
   "keywords": [
-    "Design",
-    "Develope",
-    "Freelance"
+    "Developer",
+    "DevOps"
   ],
   "version": "0.1.0",
   "private": true,

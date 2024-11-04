@@ -1,16 +1,16 @@
 /** @type {import('next').Metadata} */
 export const rootMetadata = {
-  metadataBase: new URL('https://dipankar-majee-portfolio.vercel.app/'),
+  metadataBase: new URL('https://dipankarmajee.github.io/'),
   title: {
     template: '%s | Dipankar Majee',
-    default: 'Dipankar Majee • Freelance Designer & Developer',
+    default: 'Dipankar Majee • Developer & DevOps',
   },
   description:
     'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dipankar',
   generator: 'Dipankar Majee',
   applicationName: 'Dipankar Majee',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Design', 'Develope', 'Freelance'],
+  keywords: ['DevOps', 'Develope'],
   authors: [
     { name: 'Ali Bagheri', url: 'https://www.github.com/alibagheri2079' },
   ],

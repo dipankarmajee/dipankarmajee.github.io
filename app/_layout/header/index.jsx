@@ -11,18 +11,18 @@ import { slideUp } from './variants';
 export function Header() {
   return (
     <motion.header
-      className='relative h-screen overflow-hidden bg-secondary-foreground text-background'
+      className='relative h-screen overflow-hidden border-0 border-purple-500 bg-secondary-foreground text-background'
       variants={slideUp}
       initial='initial'
       animate='enter'
     >
-      <CldImage
+      {/* <CldImage
         src='Dipankar-Portfolio/images/lapetmmek4fymz68m4u8'
         className='object-cover md:scale-125 md:object-contain'
         fill={true}
         sizes='100vw'
         alt='Dipankar Majee Personal Picture'
-      />
+      /> */}
 
       <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
         <div className='select-none'>
@@ -43,7 +43,7 @@ export function Header() {
             </div>
 
             <h4 className='text-[clamp(1.55em,2.5vw,2.75em)]'>
-              <span className='block'>Designer &amp; Developer</span>
+              <span className='block'>Developer &amp; DevOps</span>
             </h4>
           </div>
         </div>

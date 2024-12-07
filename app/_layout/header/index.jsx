@@ -16,11 +16,12 @@ export function Header() {
     <motion.header
       // className={`relative h-screen overflow-hidden text-background ${open ? 'bg-orange-300' : 'bg-secondary-foreground'}`}
       className={`relative h-screen overflow-hidden text-background 
-        transition-colors duration-500 transform 
+        transition-colors duration-500 transform
         ${open ? 'scale-105 bg-[#D5CECB]' : 'scale-100 bg-secondary-foreground'}`}
       variants={slideUp}
       initial='initial'
       animate='enter'
+      // style={{ zIndex: 200 }}
     >
       {/* <CldImage
         src='Dipankar-Portfolio/images/lapetmmek4fymz68m4u8'
@@ -38,6 +39,7 @@ export function Header() {
           transform: 'translate(-50%, -50%)', // Adjust to the center point.
           zIndex: 100, // Ensure it's behind other elements.
         }}
+        onClick={e => (e.stopPropagation(), setOpen(!open))}
       >
         <FlyingLaptop open={open} setOpen={setOpen} />
       </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MoveDownRight } from 'lucide-react';
 import { CldImage } from 'next-cloudinary';
@@ -7,14 +8,20 @@ import { CldImage } from 'next-cloudinary';
 import { ParallaxSlider } from '@/components';
 
 import { slideUp } from './variants';
+import FlyingLaptop from '@/app/_components/threejs/flying-laptop';
 
 export function Header() {
+  const [open, setOpen] = useState(true);
   return (
     <motion.header
-      className='relative h-screen overflow-hidden border-0 border-purple-500 bg-secondary-foreground text-background'
+      // className={`relative h-screen overflow-hidden text-background ${open ? 'bg-orange-300' : 'bg-secondary-foreground'}`}
+      className={`relative h-screen overflow-hidden text-background 
+        transition-colors duration-500 transform
+        ${open ? 'scale-105 bg-[#D5CECB]' : 'scale-100 bg-secondary-foreground'}`}
       variants={slideUp}
       initial='initial'
       animate='enter'
+      // style={{ zIndex: 200 }}
     >
       {/* <CldImage
         src='Dipankar-Portfolio/images/lapetmmek4fymz68m4u8'
@@ -23,6 +30,19 @@ export function Header() {
         sizes='100vw'
         alt='Dipankar Majee Personal Picture'
       /> */}
+
+      <div
+        style={{
+          position: 'absolute', // Use 'absolute' or 'fixed' for centering relative to the viewport.
+          top: '45%', // Center vertically.
+          left: '50%', // Center horizontally.
+          transform: 'translate(-50%, -50%)', // Adjust to the center point.
+          zIndex: 100, // Ensure it's behind other elements.
+        }}
+        onClick={e => (e.stopPropagation(), setOpen(!open))}
+      >
+        <FlyingLaptop open={open} setOpen={setOpen} />
+      </div>
 
       <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
         <div className='select-none'>

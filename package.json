@@ -21,6 +21,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@react-spring/core": "^9.7.5",
+    "@react-spring/three": "^9.7.5",
+    "@react-spring/web": "^9.7.5",
+    "@react-three/drei": "^9.120.1",
+    "@react-three/fiber": "^8.17.10",
     "@studio-freight/lenis": "^1.0.29",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
@@ -33,7 +38,8 @@
     "react-dom": "^18",
     "react-wrap-balancer": "^1.1.0",
     "styled-components": "^6.1.1",
-    "tailwind-merge": "^2.1.0"
+    "tailwind-merge": "^2.1.0",
+    "three": "^0.171.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

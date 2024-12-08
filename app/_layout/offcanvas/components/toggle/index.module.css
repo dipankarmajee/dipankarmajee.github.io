@@ -3,7 +3,7 @@
   top: 0;
   right: 0;
   margin: theme(margin.6);
-  z-index: theme(zIndex.40);
+  z-index: 400;
 }
 
 .burger {

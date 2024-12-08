@@ -5,7 +5,7 @@ import { NavbarList } from './list';
 
 export function Navbar(props) {
   return (
-    <nav className='absolute inset-x-0 top-0' style={{ zIndex: 200 }}>
+    <nav className='absolute inset-x-0 top-0 z-[200]'>
       <div
         className={`flex items-center justify-between px-8 py-4 ${props?.className ? props?.className : 'text-background'}`}
       >

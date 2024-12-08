@@ -127,6 +127,7 @@ export default function FlyingLaptop({ open, setOpen }) {
               <Model
                 open={open}
                 hinge={props.open.to([0, 1], [1.575, -0.425])}
+                scale={[1.25, 1.25, 1.25]} // 1.5x scale
               />
             </group>
             <Environment preset='city' />

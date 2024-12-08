@@ -48,7 +48,7 @@ export function OffcanvasBody() {
 
   return (
     <MotionComponent
-      className='z-40'
+      className='z-[400]'
       variants={slideLeft} // Pass dynamic offset
       initial='initial'
       animate='enter'

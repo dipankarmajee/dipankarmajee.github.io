@@ -32,20 +32,10 @@ export function Header() {
       /> */}
 
       <div
-        style={{
-          position: 'absolute', // Use 'absolute' or 'fixed' for centering relative to the viewport.
-          top: '45%', // Center vertically.
-          left: '50%', // Center horizontally.
-          transform: 'translate(-50%, -50%)', // Adjust to the center point.
-          zIndex: 100, // Ensure it's behind other elements.
-        }}
         onClick={e => (e.stopPropagation(), setOpen(!open))}
+        className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'
       >
-        <FlyingLaptop open={open} setOpen={setOpen} />
-      </div>
-
-      <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
-        <div className='select-none'>
+        <div className='z-[200] select-none'>
           <h1 className='text-[max(9em,15vw)]'>
             <ParallaxSlider repeat={4} baseVelocity={2}>
               <span className='pe-12'>
@@ -56,13 +46,17 @@ export function Header() {
           </h1>
         </div>
 
+        <div className='absolute left-1/2 top-1/2 z-[100] -translate-x-1/2 -translate-y-1/2'>
+          <FlyingLaptop open={open} setOpen={setOpen} />
+        </div>
+
         <div className='md:ml-auto'>
           <div className='mx-10 max-md:my-12 md:mx-36'>
             <div className='mb-4 md:mb-6'>
               <MoveDownRight size={28} strokeWidth={1.25} />
             </div>
 
-            <h4 className='text-[clamp(1.55em,2.5vw,2.75em)]'>
+            <h4 className='z-[200] text-[clamp(1.55em,2.5vw,2.75em)]'>
               <span className='block'>Developer &amp; DevOps</span>
             </h4>
           </div>
